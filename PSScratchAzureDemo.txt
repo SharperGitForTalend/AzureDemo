@@ -1,0 +1,75 @@
+[11:41 AM] Adeola Omonira
+az group creat  --name trainingtest2022  --location "eastus"
+
+
+[11:42 AM] Adeola Omonira
+New-AzResourceGroup --location westus --resource-group MyResourceGroupSHarper
+
+New-AzResourceGroup `MyResourceGroupSHarper
+  -Name {name of your resource group} 
+  -Location "eastus"
+
+
+New-AzResourceGroup 
+  -Name MyResourceGroupSHarper `
+  -Location "eastus"
+
+
+New-AzResourceGroup `
+  -Name {name of your resource group} `
+  -Location "{location}"
+
+
+New-AzResourceGroup `
+  -Name SharperTest `
+  -Location "eastus"
+
+az group create --name myResourceGroup --location "Central US"
+
+az account set --subscription "ba904d96-dc3a-47fb-bdcf-6b89640ac708"
+
+ba904d96-dc3a-47fb-bdcf-6b89640ac708
+
+$context = Get-AzSubscription -SubscriptionId ba904d96-dc3a-47fb-bdcf-6b89640ac708
+Set-AzContext $context
+
+$templateFile="C:\Users\FB003575\Desktop\AzureTrainingRepo\azuredeploy.json"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="Learning-"+"$today"
+New-AzResourceGroupDeployment `
+  -Name $deploymentName `
+  -TemplateFile $templateFile
+
+
+$templateFile="azuredeploy.json"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="Learning-"+"$today"
+New-AzResourceGroupDeployment `
+  -Name $deploymentName `
+  -TemplateFile $templateFile
+
+
+
+az configure --defaults group=learn-05ee66b7-6bef-4970-ac3e-a52a055ff724
+
+az account list --refresh  --query "[?contains(name, 'Concierge Subscription')].id" --output table
+
+az account set --subscription 538be7b9-15c9-4be0-a2ee-8d948e33ad6a
+
+-----
+$context = Get-AzSubscription -SubscriptionId 1309f2b4-d835-4577-9934-56d91ba15177
+Set-AzContext $context
+
+az account set --subscription 1309f2b4-d835-4577-9934-56d91ba15177
+
+
+az configure --defaults group=[covid-reporting-20221010] sql-server=[covid-srv-20221010]
+
+az configure --defaults group=covid-reporting-20221010 sql-server=covid-srv-20221010
+
+sqlcmd -S tcp:covid-srv-20221010.database.windows.net,1433 -d activateazuretestdb -U adm -P 'Activate2022!' -N -l 30
+
+sqlcmd -S tcp:covid-srv-20221010.database.windows.net,1433 -d activateazuretestdb-U adm -P 'Activate2022!' -N -l 30
+
+CREATE TABLE Drivers (DriverID int, LastName varchar(255), FirstName varchar(255), OriginCity varchar(255));
+GO
